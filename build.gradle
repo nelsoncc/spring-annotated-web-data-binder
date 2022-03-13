@@ -101,7 +101,3 @@ sonarqube {
 //        property "sonar.coverage.jacoco.xmlReportPaths", reportXmlFile
     }
 }
-
-wrapper {
-    distributionType = Wrapper.DistributionType.ALL
-}
