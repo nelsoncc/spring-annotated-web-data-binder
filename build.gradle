@@ -48,7 +48,7 @@ subprojects {
         // Test
         implementation platform('org.junit:junit-bom:5.6.1')
         implementation platform('org.assertj:assertj-core:3.15.0')
-        implementation platform('nl.jqno.equalsverifier:equalsverifier:3.1.13')
+        implementation platform('nl.jqno.equalsverifier:equalsverifier:3.9')
         implementation platform('org.mockito:mockito-core:3.3.3')
     }
     
