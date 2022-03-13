@@ -3,6 +3,10 @@ plugins {
     id 'jacoco'
 }
 
+compileJava {
+    options.release.set(17)
+}
+
 dependencies {
     implementation project(':spring-webmvc-annotated-data-binder')
     implementation project(':spring-webflux-annotated-data-binder')

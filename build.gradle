@@ -28,8 +28,17 @@ subprojects {
 
     group 'com.mattbertolini'
     version '0.5.0-SNAPSHOT'
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+            vendor = JvmVendorSpec.ADOPTIUM
+        }
+    }
     
-    sourceCompatibility = 1.8
+    compileJava {
+        options.release.set(8)
+    }
 
     repositories {
         mavenCentral()
